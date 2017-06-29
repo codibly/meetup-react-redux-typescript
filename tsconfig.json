@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceRoot": "./",
+    "inlineSourceMap": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": false,
+    "target": "es5",
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "lib": [
+      "scripthost",
+      "dom",
+      "es6"
+    ],
+    "importHelpers": true,
+    "paths": {
+      "app": ["./app"],
+      "Client": ["./src/Client"],
+      "Kernel": ["./src/Kernel"]
+    },
+    "typeRoots" : [
+      "./node_modules/@types",
+      "./types"
+    ]
+  },
+  "include": [
+    "./src/**/*",
+    "./app/**/*"
+  ],
+
+  "compileOnSave": false
+}
