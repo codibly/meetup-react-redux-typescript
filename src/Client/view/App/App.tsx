@@ -1,14 +1,13 @@
 
 import * as React from 'react';
-import { StatelessComponent } from 'react';
+import { SFC } from 'react';
 import { Fragment } from 'redux-little-router';
-import { TodoPage } from '../TodoPage/TodoPage';
-import { Container } from 'reactstrap';
+import { AppContainer } from './App.s';
 
-export const App: StatelessComponent<{}> = () => (
+export const App: SFC = () => (
   <Fragment forRoute='/'>
-    <Container>
-      <TodoPage/>
-    </Container>
+    <AppContainer>
+      Hello world!
+    </AppContainer>
   </Fragment>
 );
