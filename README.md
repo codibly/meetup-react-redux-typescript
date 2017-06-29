@@ -10,6 +10,7 @@ It is recommended that you use [Yarn](https://yarnpkg.com/) for deterministic in
 
 ```bash
 $ yarn install         # Install project dependencies
+$ cp .env.dist .env    # Create .env file based on dist template
 $ yarn dev             # Start dev server
 ```
 While developing, you will probably rely mostly on `yarn dev`; however, there are additional scripts at your disposal:
